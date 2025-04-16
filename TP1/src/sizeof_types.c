@@ -1,4 +1,3 @@
-// sizeof_types.c
 #include <stdio.h>
 
 int main() {
