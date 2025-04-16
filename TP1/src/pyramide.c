@@ -18,7 +18,7 @@ int main() {
             printf("%d ", j);
         }
 
-        // Affichage des nombres décroissants
+        // Affichage des nombres  décroissants
         for (j = i - 1; j >= 1; j--) {
             printf("%d ", j);
         }
