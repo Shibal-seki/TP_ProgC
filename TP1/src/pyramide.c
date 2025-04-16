@@ -8,7 +8,7 @@ int main() {
     printf("Pyramide de hauteur %d :\n\n", n);
 
     for (i = 1; i <= n; i++) {
-        // Espaces pour centrer la ligne
+        
         for (j = 1; j <= n - i; j++) {
             printf("  "); // deux espaces pour garder l'alignement
         }
