@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int n = 5; // Hauteur de la pyramide
+    int n = 5;
     int i, j;
 
     printf("Pyramide de hauteur %d :\n\n", n);
