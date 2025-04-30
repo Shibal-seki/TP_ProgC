@@ -4,7 +4,7 @@
 int main() {
     int a = 2;  // Base
     int b = 3;  // Exposant
-    int resultat = 1; // Initialisation du résultat à 1
+    int resultat = 1; // Initialisation du résultat a 1
 
     // Boucle pour multiplier 'a' par lui-même 'b' fois
     for (int i = 1; i <= b; i++) {
