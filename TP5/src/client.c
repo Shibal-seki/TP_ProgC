@@ -22,18 +22,20 @@ void demarrer_client() {
 
     connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr));
 
-    // Entrée utilisateur
     printf("Votre message (max %d caractères): ", BUFFER_SIZE - 1);
     fgets(buffer, BUFFER_SIZE, stdin);
     buffer[strcspn(buffer, "\n")] = 0;
 
-    // Envoi du message
     send(sock, buffer, strlen(buffer), 0);
 
-    // Réception de la réponse
     memset(buffer, 0, BUFFER_SIZE);
     recv(sock, buffer, BUFFER_SIZE, 0);
     printf("Message reçu: %s\n", buffer);
 
     close(sock);
+}
+
+int main() {
+    demarrer_client();
+    return 0;
 }
